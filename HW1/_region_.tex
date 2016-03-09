@@ -1,0 +1,118 @@
+\message{ !name(hw1.tex)}
+\message{ !name(hw1.tex) !offset(-2) }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+% 
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+% 
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+% 
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% ----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% ----------------------------------------------------------------------------------------
+
+\documentclass[paper=letter, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document -
+%comment this line to return to the LaTeX default
+% \usepackage{fontspec}
+% \setmainfont{Times}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{sectsty} % Allows customizing section commands
+%\allsectionsfont{\centering \normalfont\scshape} % Make all sections
+%centered, the default font and small caps
+\allsectionsfont{\bfseries\rmfamily\large}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+% ----------------------------------------------------------------------------------------
+% TITLE SECTION
+% ----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{ 
+  \normalfont \normalsize 
+  \textsc{} \\ [25pt] % Your university, school and/or department name(s)
+  \horrule{0.5pt} \\ [0.4cm] % Thin top horizontal rule
+  \huge STAT HW1 \\ % The assignment title
+  \horrule{2pt} \\ [0.5cm] % Thick bottom horizontal rule
+}
+\author{Yifan Zhou} % Your name
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+\maketitle % Print the title
+\section{Random Number Generators}
+In class, we talked about many variants of random number generators
+and explored their properties in terms of their (i) period, (ii)
+clustering, (iii) efficiency, and (iv) portability. In your computer
+language and/or algorithm library of choice, choose the random
+generator that you will be using for the rest of the class. Search the
+literature for articles that explore the above properties of your
+generator and summarize your findings in a couple of paragraphs. Make
+sure to include references and, if you find it necessary, figures.
+
+\section{Designing surveys}
+The Kepler mission has been observing a very large number of stars in
+a small patch in the sky and is making a very reliable measurement of
+the occurrence rate of planets around solar type stars (see Batalha,
+N. M. 2014, Proceedings of the National Academy of Science, 111,
+12647; arXiv:1409.1904). For the purposes of this homework problem, we
+will assume that the occurrence rate of planets with radii between one
+and two Earth radii has been measured to a very high accuracy and it
+is equal to 10\% (i.e., 10\% of solar type stars harbor such planets;
+the actual rate is consistent with this number but has some
+considerable uncertainty).
+
+You are designing a survey of solar type stars in a
+different patch of the sky to find the same type of planets. How
+many stars would you need to observe in order to have a 90\%
+likelihood that you will find at least 30 planets with radii
+between one and two Earth radii? What if you want to have a 99\%
+likelihood?
+
+
+\section{Blackbody distribution}
+\newcommand{\epsi}{\ensuremath{\epsilon}}
+\newcommand{\dd}{\ensuremath{\mathrm{d}}}
+The energy distribution of the number of photons that follow the
+blackbody distribution is given by
+
+where $\epsi$ is the photon energy, $C$ is a normalization constant, $T$ is the
+temperature of the distribution and $k$ is the Boltzmann constant. (Note
+that this is the distribution of the number of photons and not of the
+radiation energy density, which is the expression that you are
+probably more familiar with). Our goal is to generate an ensemble of
+photons with energies drawn from this distribution and in a range
+$(\epsi_{1}, \epsi_{2})$, using the rejection method. (i) Start by making a change of
+variables
+\end{document}
+\message{ !name(hw1.tex) !offset(-118) }
